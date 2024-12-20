@@ -1,7 +1,7 @@
 <template>
   <div class=" w-screen h-fit flex justify-center gap-10">
     <div class=" hidden md:grid align-middle items-center"> 
-      <img class=" h-60" src="https://sites.psu.edu/curtmoore34/wp-content/uploads/sites/40170/2016/04/contactme.png">
+      <img class=" h-60" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png">
       
     </div>
     <div class=" my-5">

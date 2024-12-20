@@ -13,10 +13,7 @@
 
         </ul>
         </div>
-        <div class="w-fit">
-        <button @click="toggleGrid" class=" rounded-full px-3 py-2 hover:shadow-md hover:bg-gray-100 my-5">
-          <img  class="w-8 h-8 ratateDegree" :class="{'rotate-180' : isRotated }" src="https://www.svgrepo.com/show/522521/down-2.svg"  id="myImage" >
-        </button></div>
+        
     </div>
 </template>
 
@@ -25,8 +22,8 @@ export default {
 name:"popup",
   data() {
     return {
-      showGrid: false,
-      isRotated: false,
+      showGrid: true,
+      isRotated: true,
     };
   },
   methods: {
