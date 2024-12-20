@@ -19,10 +19,11 @@ document.addEventListener('mousemove', (event) => {
 
 <template>
   
-    <Navbar />
-    <section id="home" class=" flex flex-col items-center my-10 )">
+  <Navbar />    
+    <div class="wrapper">
+    <section id="home" class=" flex flex-col items-center my-10 section">
         <div class=" object-cover flex flex-col items-center bg-white rounded-lg gap-5 md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img id="image" class=" w-auto rounded-lg h-80 md:h-auto md:w-60 shadow-lg" src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/431972477_3727534180817564_7579294205981694598_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFv0NwseUEuFuWKHSC-g0jnMTaPV-KKiw0xNo9X4oqLDXd4KomxCVVVRuQaIoptPe9qs6vV-_Mlk9cyVNPOg-FX&_nc_ohc=JmhGNPKULloAX94g6tv&_nc_oc=AQnW2LtBt8COzmZarsut6MOo-QE3Jwg6LzyP8QxPPycT3qVyJjX0p4-vqUdwWd9M-tY&_nc_ht=scontent.fbkk10-1.fna&oh=03_AdSbvFLIAd67TNa9Eho0z3JyuLJTNZr3sm1fIvKKgjGtSA&oe=661A4298" alt="profile">
+            <img id="image" class=" w-auto rounded-lg h-80 md:h-auto md:w-60 shadow-lg" src="https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-6/458976969_485510837709896_6607164205883573220_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mshe8s5fpgQQ7kNvgH8QNSY&_nc_oc=Adi7MYel4lWQslDaoPHrTjwTob1RNJmdHJFyY9N6oQm0Et4EzB1orB_p0fLG9_dMsfU2AzgfZHJdS6VskGMLPSkb&_nc_zt=23&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=AfIV5224hnSNZ8O3qDvmNTB&oh=00_AYAKP6RmQwA8qvuF2gjgAH_sLoNB0bfNY0gPIXZk3EEweA&oe=676B6D93" alt="profile">
             <div class="flex flex-col justify-between px-20 py-10 md:p-4 leading-normal ">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-sans">
                   Hello, My name is Kottaboung</h5>
@@ -54,7 +55,7 @@ document.addEventListener('mousemove', (event) => {
       
     </section>
     
-    <section id="about" class="flex flex-col items-center my-20">
+    <section id="about" class="flex flex-col items-center my-20 section">
           <div class=" object-cover flex flex-col items-center bg-white rounded-lg gap-5 md:flex-row dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             
             <div class="flex flex-col px-10 py-5 items-center leading-normal hover:shadow-md rounded-lg gap-5">
@@ -83,63 +84,104 @@ document.addEventListener('mousemove', (event) => {
           
           
             
-            <div class="flex flex-col px-10 py-5 items-center leading-normal hover:shadow-md rounded-lg gap-5">
-                <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white font-sans">
-                  Hard Skills</h5>
-                
-                  <ul class="flex flex-col md:flex-row md:flex-wrap gap-3">
+            <div class="flex flex-col px-10 py-5 items-center justify-center leading-normal hover:shadow-md rounded-lg gap-5">
+            <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white font-sans">
+              Hard Skills
+            </h5>
 
-                    <li data-tooltip-target="tooltip-vue" class="p-2 items-center flex flex-col justify-center">
-                      <img class="w-16 h-16  " src="https://www.svgrepo.com/show/452130/vue.svg" alt="vue">
-                      <p class="text-sm">Vue Js</p>
-
-                      <div id="tooltip-vue" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                          4/10 point
-                          <div class="tooltip-arrow" data-popper-arrow></div>
-                      </div>
-                    </li>
-                    <li data-tooltip-target="tooltip-tailwind" class="p-2 items-center flex flex-col justify-center">
-                      <img class="w-16 h-16  " src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="tailwind">
-                      <p class="text-sm">Tailwind CSS</p>
-                      <div id="tooltip-tailwind" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                          6/10 point
-                          <div class="tooltip-arrow" data-popper-arrow></div>
-                      </div>
-                    </li>
-                    <li data-tooltip-target="tooltip-javascript" class="p-2 items-center flex flex-col justify-center">
-                      <img class="w-16 h-16  " src="https://www.svgrepo.com/show/349419/javascript.svg" alt="javascript">
-                      <p class="text-sm">Javascript</p>
-                      <div id="tooltip-javascript" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                          3/10 point
-                          <div class="tooltip-arrow" data-popper-arrow></div>
-                      </div>
-                    </li>
-                    
-
-                  </ul>
-                  <popup2 />
+            <ul class="grid grid-cols-3 gap-5">
+              <li data-tooltip-target="tooltip-vue" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/452130/vue.svg" alt="vue">
+                <p class="text-sm">Vue Js</p>
+                <div id="tooltip-vue" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  4/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-tailwind" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="tailwind">
+                <p class="text-sm">Tailwind CSS</p>
+                <div id="tooltip-tailwind" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  4/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-javascript" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/349419/javascript.svg" alt="javascript">
+                <p class="text-sm">Javascript</p>
+                <div id="tooltip-javascript" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  8/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-python" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/452091/python.svg" alt="">
+                <p class="text-sm">Python</p>
+                <div id="tooltip-python" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  3/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-c" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/508906/cplusplus.svg" alt="">
+                <p class="text-sm">C++</p>
+                <div id="tooltip-c" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  6/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-bootstrap" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/353498/bootstrap.svg" alt="">
+                <p class="text-sm">Bootstrap</p>
+                <div id="tooltip-bootstrap" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  6/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-html" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/452228/html-5.svg" alt="">
+                <p class="text-sm">HTML</p>
+                <div id="tooltip-html" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  9/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-css" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/452185/css-3.svg" alt="">
+                <p class="text-sm">CSS</p>
+                <div id="tooltip-css" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  8/10 point
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </li>
+              <li data-tooltip-target="tooltip-php" class="p-2 items-center flex flex-col justify-center">
+                <img class="w-16 h-16" src="https://www.svgrepo.com/show/349474/php.svg" alt="">
+                <p class="text-sm">PHP</p>
+                <div id="tooltip-php" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    3/10 point
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                </li>
+              </ul>
             </div>
+
           </div>
-      
     </section>
 
 
-    <section id="project" class="flex flex-col items-center mb-52">
+    <section id="project" class="flex flex-col items-center mb-52 section">
       <h1 class="text-2xl font-bold mb-5 ">My Project</h1>
       <div class="w-3/5 shadow-lg">
         <carousel />
       </div>
       
-    </section>
-
-
-    
+    </section> 
 
     <section id="playg" class="">
 
     </section>
 
-    <section id="contact" class="">
+    <section id="contact" class="section flex flex-col items-center my-20">
       <p class=" text-2xl text-center my-5 font-bold">Contact Me !</p>
       <form1 />
 
@@ -149,12 +191,40 @@ document.addEventListener('mousemove', (event) => {
       <footerrel />
       
     </section>
-    <footbar />
+  </div>
+
+  <footbar />
   
 </template>
 
 <style scoped>
 #image {
   transition: transform 0.1s ease-out;
+}
+
+.wrapper {
+  scroll-snap-type: y mandatory; /* Enable scroll snapping */
+  overflow-y: scroll; /* Allow vertical scrolling */
+  height: 100vh; /* Full viewport height */
+}
+
+.section {
+  height: 100vh; /* Make each section full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start; /* Snap to the top of each section */
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Makes scrollbar visible */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+
+section {
+  padding: 20px;
 }
 </style>

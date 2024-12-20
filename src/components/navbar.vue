@@ -21,6 +21,7 @@
        </ul>
        
       </div> 
+      
       <div>
        <ul class="flex gap-5">
            
@@ -65,5 +66,16 @@
    </script>
    
    <style>
+   html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    }
+
+    body, #app {
+    position: relative;
+    min-height: 100vh;
+}
+
+
    
    </style>

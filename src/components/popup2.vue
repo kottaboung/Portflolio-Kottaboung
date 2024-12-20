@@ -75,19 +75,19 @@ name:"popup2",
   data() {
     
     return {
-      showGrid: false,
-      isRotated: false
+      showGrid: true,
+      isRotated: true
       
     };
   },
-  methods: {
-    toggleGrid() {
-      this.showGrid = !this.showGrid;
-      this.isRotated = !this.isRotated;
+  // methods: {
+  //   toggleGrid() {
+  //     this.showGrid = !this.showGrid;
+  //     this.isRotated = !this.isRotated;
       
       
-    }
-  }
+  //   }
+  // }
 }
 </script>
 
